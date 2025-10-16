@@ -15,7 +15,7 @@ public class FindCar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        target = GameObject.Find("Car");
+        //target = GameObject.Find("Car");
         Vector3 newPos = target.transform.position + offset;
         transform.position = newPos;
     }
