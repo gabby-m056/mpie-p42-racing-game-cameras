@@ -7,6 +7,7 @@ public class FindCar : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
         offset = transform.position - target.transform.position;
     }
 
@@ -14,6 +15,7 @@ public class FindCar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        target = GameObject.Find("Car");
         Vector3 newPos = target.transform.position + offset;
         transform.position = newPos;
     }
